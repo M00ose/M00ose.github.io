@@ -16,7 +16,7 @@ const Navbar = () => {
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      className={`${styles.paddingX} h-fit w-full flex-col justify-between items-center py-5 fixed top-0 z-20`}
+      className='h-fit w-full flex-col justify-between items-center py-5 px-20 fixed top-0 z-20'
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
@@ -85,7 +85,7 @@ const Navbar = () => {
 
       <motion.div 
         variants={growIn("horizontal","tween",1,1)} 
-        className='bg-off-black'>
+        className={`${styles.paddingX} bg-off-black`}>
       </motion.div>
     </motion.nav>
   )
