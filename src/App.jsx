@@ -1,6 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
 
-import { Navbar, Hero, Stack, Projects, Contact } from "./components";
+import { Navbar, Hero, Projects, Contact } from "./components";
+import { projects } from "./constants";
 
 const App = () => {
   return (
@@ -9,9 +10,19 @@ const App = () => {
         <div className='snap-start h-screen w-screen'>
           <Navbar />
           <Hero />
-          <Stack />
         </div>
-        <Projects />
+        {projects.map((project) => (
+          <Projects 
+            name={project.name} 
+            description={project.description}
+            tag={project.tag}
+            tech={project.tech}
+            image={project.image}
+            link={project.link}
+            github={project.github}
+          />
+        ))}
+        
         <Contact />
       </div>
     </BrowserRouter>
