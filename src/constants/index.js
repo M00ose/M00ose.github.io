@@ -12,7 +12,11 @@ import {
   react,
   tailwindcss,
   threejs,
-  typescript
+  typescript,
+  
+  arienza,
+  echo,
+  siargao,
 } from '../assets';
 
 export const navLinks = [
@@ -93,25 +97,31 @@ const technologies = [
 
 const projects = [
     {
-      name: "",
-      description:
-        "",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "mongodb",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: "",
-      source_code_link: "",
+      name: "Siargao International Surfing Festival",
+      description: "A landing page showcasing the a surfing event in the Philippines. The goal was to design it to be fun, bright, and animated.",
+      tag: "Completed",
+      tech: 'Built with Next.js, Tailwind CSS, and Framer Motion.',
+      image: siargao,
+      link: "https://siargaoisf.ph/",
+      github: "https://github.com/M00ose/webpage-siargaoISF",
+    },
+    {
+      name: "Arienza - Architects and Engineers",
+      description: "A modern and sleek landing page for an architecture and engineering firm.",
+      tag: "In progress",
+      tech: 'Built with React.js, Tailwind CSS, React-Router, Three.js, and Framer Motion.',
+      image: arienza,
+      link: "",
+      github: "https://github.com/M00ose/webpage-arienza",
+    },
+    {
+      name: "Echo",
+      description: "A CRUD application built with the MERN stack. The application is a CRM platform designed specifically for nonprofits and fundraising workflows.",
+      tag: "In progress",
+      tech: 'Built with the M.E.R.N stack, with Flowbite for design and Refine for development.',
+      image: echo,
+      link: "",
+      github: "https://github.com/M00ose/webapp-echo",
     },
 ];
 
