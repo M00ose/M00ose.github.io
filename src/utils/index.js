@@ -1,3 +1,5 @@
+import { color } from "framer-motion";
+
 export const textVariant = (delay) => {
     return {
       hidden: {
@@ -96,6 +98,41 @@ export const textVariant = (delay) => {
       },
     };
   };
+
+  export const fillIn = (direction, type, delay, duration) => {
+    return {
+      hidden: {
+        x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,
+        y: direction === "up" ? "-100%" : direction === "down" ? "100%" : 0,
+      },
+      show: {
+        x: 0,
+        y: 0,
+        opacity: 1,
+        transition: {
+          type: type,
+          delay: delay,
+          duration: duration,
+          ease: "easeOut",
+        },
+      },
+    };
+  };
+
+  export const borderFill = (delay, duration) => {
+    return {
+      hidden: {
+        border: 0,
+      },
+      show: {
+        border: 2,
+        transition: {
+          delay: delay,
+          duration: duration,
+        },
+      }
+    }
+  }
   
   export const staggerContainer = (staggerChildren, delayChildren) => {
     return {
