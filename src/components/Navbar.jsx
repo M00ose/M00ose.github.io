@@ -16,7 +16,7 @@ const Navbar = () => {
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      className='h-fit w-full flex-col justify-between items-center py-5 px-20 fixed top-0 z-20'
+      className='h-fit w-full flex-col justify-between items-center py-5 px-12 sm:px-20 fixed top-0 z-20'
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
@@ -69,7 +69,7 @@ const Navbar = () => {
                     key={link.id}
                     className={`${
                     active === link.title ? "text-secondary" : "text-off-black"
-                    } ${styles.padding} ${styles.border} border-b-0 last:border-b-2 h-full w-full  hover:text-tertiary text-[18px] cursor-pointer`}
+                    } ${styles.padding} ${styles.border} border-b-0 last:border-b-2 h-full w-full  hover:text-tertiary text-sm cursor-pointer`}
                     onClick={() => {
                       setToggle(!toggle);
                       setActive(link.title)
