@@ -4,6 +4,16 @@ module.exports = {
   mode: "jit",
   theme: {
     extend: {
+      keyframes: {
+        scroll: {
+          '0%, 100%': { transform: 'translateX(0)'},
+          '50%': { transform: 'translateX(calc(-4vw * 6.5))'}, 
+        },
+        scrollSM: {
+          '0%, 100%': { transform: 'translateX(0)'},
+          '50%': { transform: 'translateX(calc(-8vw * 6.5))'}, 
+        }
+      },
       colors: {
         primary: "#EDEADE",
         secondary: "#878749",
@@ -17,6 +27,11 @@ module.exports = {
       },
       screens: {
         xs: "450px",
+        sm: "576px",
+        md: '768px',
+        lg: '992px',
+        xl: '1200px',
+        xxl: '1400px',
       },
     },
   },
