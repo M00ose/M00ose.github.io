@@ -15,7 +15,7 @@ const Projects = (props) => {
     >
         <div className={`${styles.padding}`}>
             <div className={`relative ${styles.flexColRow} items-center`}>
-                <h2 className={`absolute top-0 -translate-y-24 ${styles.padding} text-2xl lg:text-4xl z-20`}> <span className='text-base xl:text-2xl'>/02</span> Projects</h2>
+                <h2 className={`absolute top-0 -translate-y-20 md:-translate-y-24 ${styles.padding} text-2xl lg:text-4xl z-20`}> <span className='text-base xl:text-2xl'>/02</span> Projects</h2>
 
                 {/* Image */}
                 <motion.div variants={slideIn("left","tween",1,1)} className='relative h-[60vh] w-fit drop-shadow-xl'>
