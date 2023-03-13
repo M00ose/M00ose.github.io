@@ -1,0 +1,176 @@
+{
+  "accessors": [
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 8985,
+      "max": [
+        0.5841000080108643,
+        0.37290000915527344,
+        0.6576899886131287
+      ],
+      "min": [
+        -0.5461300015449524,
+        -0.46838000416755676,
+        -0.7376999855041504
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 107820,
+      "componentType": 5126,
+      "count": 8985,
+      "max": [
+        0.9982362985610962,
+        0.9999741911888123,
+        0.9995267987251282
+      ],
+      "min": [
+        -0.9999569058418274,
+        -0.9998095035552979,
+        -0.999809980392456
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 8985,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Jérémie Louvetz (https://sketchfab.com/jeremielouvetz)",
+      "license": "CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)",
+      "source": "https://sketchfab.com/3d-models/moose-349aa36f7f574f809c706937b93682bd",
+      "title": "Moose"
+    },
+    "generator": "Sketchfab-12.68.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 35940,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 215640,
+      "byteOffset": 35940,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 251580,
+      "uri": "scene.bin"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "material0.001",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.1119324278369056,
+          0.07818742180518633,
+          0.07421356838014963,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.4
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Elan",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0
+          },
+          "indices": 2,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "name": "Root"
+    },
+    {
+      "children": [
+        3
+      ],
+      "matrix": [
+        0.22515000000000002,
+        -0.08658000000000002,
+        -0.9704699999999999,
+        0.0,
+        -0.97432,
+        -0.017380000000000007,
+        -0.22449000000000005,
+        0.0,
+        0.0025700000000000007,
+        0.99609,
+        -0.08827000000000003,
+        0.0,
+        0.0,
+        0.0,
+        0.55366,
+        1.0
+      ],
+      "name": "Elan"
+    },
+    {
+      "mesh": 0,
+      "name": "Elan"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Moose
+* source:	https://sketchfab.com/3d-models/moose-349aa36f7f574f809c706937b93682bd
+* author:	Jérémie Louvetz (https://sketchfab.com/jeremielouvetz)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Moose" (https://sketchfab.com/3d-models/moose-349aa36f7f574f809c706937b93682bd) by Jérémie Louvetz (https://sketchfab.com/jeremielouvetz) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
