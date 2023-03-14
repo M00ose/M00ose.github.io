@@ -20,7 +20,7 @@ const Navbar = () => {
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
-          to="/"
+          to="/about"
           onClick={() => {
             setActive("");
             window.scrollTo(0, 0);
@@ -43,50 +43,52 @@ const Navbar = () => {
                 variants={growIn("vertical","tween",1,1,"160%")} 
                 className={`bg-off-black`}>
               </motion.div>
-              <motion.a 
-                variants={textVariant(1.5)}
-                href={`#${link.id}`}
-                className='overflow-hidden'
-              >
-                {link.title}
-              </motion.a>
+                <Link 
+                  variants={textVariant(1.5)}
+                  to={`/${link.id}`}
+                  className='overflow-hidden'
+                >
+                  {link.title}
+                </Link>
             </li> 
           ))}
         </ul>
 
         {/* Mobile Navbar */}
-        <div className='sm:hidden flex flex-1 justify-end items-center'>
-          <img
-            src={toggle? close : menu} 
-            alt="menu" 
-            className='w-[28px] h-[28px] object-contain cursor-pointer'
-            onClick={() => setToggle(!toggle)}/>
+      <div className='sm:hidden flex flex-1 justify-end items-center'>
+        <img
+          src={toggle? close : menu} 
+          alt="menu" 
+          className='w-[28px] h-[28px] object-contain cursor-pointer'
+          onClick={() => setToggle(!toggle)}/>
 
-            <div className={`${!toggle ? 'hidden' : 'flex'} absolute top-20 left-0 h-fit w-full px-6 bg-primary`}>
-              <ul className={`list-none flex justify-start items-start flex-col h-full w-full`}>
-                {navLinks.map((link) => (
-                <li
-                    key={link.id}
-                    className={`${
-                    active === link.title ? "text-secondary" : "text-off-black"
-                    } ${styles.padding} ${styles.border} border-b-0 last:border-b-2 h-full w-full  hover:text-tertiary text-sm cursor-pointer`}
-                    onClick={() => {
-                      setToggle(!toggle);
-                      setActive(link.title)
-                    }}
-                >
-                    <a href={`#${link.id}`}>{link.title}</a>
-                </li> 
-                ))}
-              </ul>
-            </div>
+          <div className={`${!toggle ? 'hidden' : 'flex'} absolute top-20 left-0 h-screen w-screen bg-primary`}>
+            <ul className={`list-none flex flex-col h-full w-full mt-8`}>
+              {navLinks.map((link) => (
+              <li
+                  key={link.id}
+                  className={`${
+                  active === link.title ? "text-secondary" : "text-off-black"
+                  } text-center text-5xl ${styles.padding} ${styles.border} border-b-0 last:border-b-[1px] h-fit w-full  hover:text-tertiary text-sm cursor-pointer`}
+                  onClick={() => {
+                    setToggle(!toggle);
+                    setActive(link.title)
+                  }}
+              >
+                  <Link to={`/${link.id}`}>{link.title}</Link>
+              </li> 
+              ))}
+            </ul>
+          </div>
         </div>
-      </div>
+
+       </div>
 
       <motion.div 
         variants={growIn("horizontal","tween",1,1)} 
         className={`${styles.paddingX} bg-off-black`}>
       </motion.div>
+
     </motion.nav>
   )
 }
