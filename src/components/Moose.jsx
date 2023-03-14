@@ -2,6 +2,8 @@ import { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
 
+import Loader from './Loader';
+
 const Moose = () => {
     const moose = useGLTF('./moose/scene.gltf');
     return (
@@ -27,7 +29,7 @@ const MooseCanvas = () => {
           position: [0,10,2]
         }}
       >
-        <Suspense fallback={`Loading...`}>
+        <Suspense fallback={<Loader />}>
           <OrbitControls
             autoRotate
             enableZoom={false}
