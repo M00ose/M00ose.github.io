@@ -8,7 +8,7 @@ const styles = {
     flexColRow: "flex flex-col md:flex-row gap-4",
     flexRowCol: "flex flex-row md:flex-col gap-4",
 
-    border: "border-off-black border-2",
+    border: "border-off-black border-[1px]",
 
     infiniteScroll: 'animate-[scrollSM_20s_ease-in-out_infinite] md:animate-[scroll_20s_ease-in-out_infinite]',
 
