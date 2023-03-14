@@ -39,7 +39,7 @@ const Hero = () => {
           {/* About */}
           <motion.div variants={textVariant(2)} className={`md:pl-12 ${styles.flexCol} xl:w-[700px] xxl:pl-48`}>
             <div className='flex flex-row items-end h-40'>
-              <img class="profile" src={profile} alt="Tyrone Jacalan"/>
+              <img className="profile" src={profile} alt="Tyrone Jacalan"/>
               <h2 className='-translate-x-10 -translate-y-5 text-2xl lg:text-4xl'> <span className='text-base xl:text-2xl'>/01</span> About</h2>
             </div>
             
@@ -68,7 +68,7 @@ const Hero = () => {
           {/* Technologies */}
           <motion.div variants={textVariant(2.5)} className={`mx-0 md:mx-12 xxl:ml-48 relative grid grid-flow-col gap-4 overflow-hidden`}>
             {technologies.map((tech) => (
-                <div className={`relative flex items-center justify-center h-[8vw] md:h-[4vw] w-[8vw] md:w-[4vw] border-[0.5px] border-solid border-off-black p-2 object-contain ${styles.infiniteScroll}`}>
+                <div key={tech.name} className={`relative flex items-center justify-center h-[8vw] md:h-[4vw] w-[8vw] md:w-[4vw] border-[0.5px] border-solid border-off-black p-2 object-contain ${styles.infiniteScroll}`}>
                   <img src={tech.icon} alt={tech.name}/>
                 </div>
             ))}

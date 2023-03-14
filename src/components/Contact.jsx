@@ -66,11 +66,11 @@ const Contact = () => {
     <motion.div
       initial="hidden"
       whileInView="show"
-      className={`relative snap-start h-screen w-screen overflow-scroll ${styles.padding} flex flex-col md:flex-row`}
+      className={`h-full w-screen ${styles.padding} overflow-scroll flex flex-col items-center md:flex-row`}
     >
       <motion.div 
         variants={slideIn("left","tween",1,1)} 
-        className={`relative ${styles.flexCol} justify-center xl:h-auto md:h-[550px] h-[350px]`}
+        className={`relative ${styles.padding} ${styles.flexCol} justify-center mt-36 md:mt-0 xl:h-auto md:h-[550px] h-[350px]`}
       >
 
         <div className='relative h-auto w-[90vw] md:w-[30vw] min-w-[300px]'>
@@ -156,7 +156,7 @@ const Contact = () => {
 
       <motion.div
         variants={slideIn("right","tween",1,1)}
-        className="xl:flex-1 w-full xl:h-auto md:h-[550px] h-[350px]"
+        className="xl:flex-1 w-full min-h-[550px] xl:h-auto md:h-[550px] h-[350px] overflow-hidden"
       >
         <MooseCanvas/>
       </motion.div>
