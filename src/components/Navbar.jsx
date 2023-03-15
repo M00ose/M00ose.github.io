@@ -66,7 +66,7 @@ const Navbar = () => {
             <ul className={`list-none flex flex-col h-full w-full mt-8`}>
               {navLinks.map((link) => (
               <li
-                  key={link.id}
+                  key={link.title}
                   className={`${
                   active === link.title ? "text-secondary" : "text-off-black"
                   } text-center text-5xl ${styles.padding} ${styles.border} border-b-0 last:border-b-[1px] h-fit w-full  hover:text-tertiary text-sm cursor-pointer`}
