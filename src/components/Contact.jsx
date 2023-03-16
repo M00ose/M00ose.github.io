@@ -5,6 +5,7 @@ import emailjs from '@emailjs/browser';
 import { styles } from '../styles';
 import { growIn, slideIn } from '../utils/index';
 import { MooseCanvas } from './index';
+import Footer from './Footer.jsx';
 
 const Contact = () => {
   const formRef = useRef();
@@ -66,102 +67,108 @@ const Contact = () => {
     <motion.div
       initial="hidden"
       whileInView="show"
-      className={`h-full w-screen ${styles.padding} overflow-scroll flex flex-col items-center md:flex-row`}
+      className={`h-full w-screen ${styles.padding} overflow-scroll flex flex-col`}
     >
-      <motion.div 
-        variants={slideIn("left","tween",1,1)} 
-        className={`relative ${styles.padding} ${styles.flexCol} justify-center mt-36 md:mt-0 xl:h-auto md:h-[550px] h-[350px]`}
+      <div 
+        className={`flex flex-col md:flex-row items-center `}
       >
+        <motion.div 
+          variants={slideIn("left","tween",1,1)} 
+          className={`relative ${styles.padding} ${styles.flexCol} justify-center mt-36 md:mt-0 xl:h-auto md:h-[550px] h-[350px]`}
+        >
 
-        <div className='relative h-auto w-[90vw] md:w-[30vw] min-w-[300px]'>
-          <motion.div
-            variants={growIn("vertical","tween",1.5,1,"100%")} 
-            className='absolute left-0 top-0 bg-off-black z-10'>
-          </motion.div>
-          <motion.div
-            variants={growIn("vertical","tween",1.5,1,"100%")} 
-            className='absolute right-0 bottom-0 bg-off-black'>
-          </motion.div>
-          <motion.div
-            variants={growIn("horizontal","tween",1,1,"100%")} 
-            className='bg-off-black'>
-          </motion.div>
-          <div className='p-4'>
-            <p className='text-sm'>I am always open to making new connections. If you have questions, comments about my work, or interested in discussing potential opportunities, please reach out to me by filling out this form: </p>
-          </div>
-          <motion.div
-            variants={growIn("horizontal","tween",2,1,"100%")} 
-            className='bg-off-black'>
-          </motion.div>
-
-          <form 
-            ref={formRef}
-            onSubmit={handleSubmit}
-            className='mt-8 flex flex-col gap-4'
-          >
-            <label className='flex flex-col'>
-              <span className='px-4 mb-4 text-sm'>Your Name</span>
-              <input 
-                type="text"
-                name="name"
-                value={form.name}
-                onChange={handleChange}
-                placeholder="What's your name?"
-                className={`px-4 bg-primary placeholder:text-secondary outline-none text-sm`} />
-            </label>
+          <div className='relative h-auto w-[90vw] md:w-[30vw] min-w-[300px]'>
             <motion.div
-              variants={growIn("horizontal","tween",2.2,1,"100%")} 
-              className='bg-off-black'>
+              variants={growIn("vertical","tween",1.5,1,"100%")} 
+              className='absolute left-0 top-0 bg-off-black z-10'>
             </motion.div>
-            <label className='flex flex-col'>
-              <span className='px-4 mb-4 text-sm'>Your Email</span>
-              <input 
-                type="email"
-                name="email"
-                value={form.email}
-                onChange={handleChange}
-                placeholder="What's your email?"
-                className={`px-4 bg-primary placeholder:text-secondary outline-none text-sm`} />
-            </label>
             <motion.div
-              variants={growIn("horizontal","tween",2.4,1,"100%")} 
-              className='bg-off-black'>
+              variants={growIn("vertical","tween",1.5,1,"100%")} 
+              className='absolute right-0 bottom-0 bg-off-black'>
             </motion.div>
-            <label className='flex flex-col'>
-              <span className='px-4 mb-4 text-sm'>Your Message</span>
-              <textarea
-                row="7" 
-                name="message"
-                value={form.message}
-                onChange={handleChange}
-                placeholder="How can I help?"
-                className={`px-4 bg-primary placeholder:text-secondary outline-none text-sm`} />
-            </label>
-            <div className='px-4'>
-              <button
-              type="submit"
-              className='bg-tertiary w-full py-3 px-8 font-bold shadow-md shadow-primary hover:bg-secondary hover:text-off-white'
-            >
-              {loading ? 'Sending...' : 'Send'}
-            </button>
-            </div>
             <motion.div
               variants={growIn("horizontal","tween",1,1,"100%")} 
               className='bg-off-black'>
             </motion.div>
-            
-          </form>
-        </div>
-      </motion.div>
+            <div className='p-4'>
+              <p className='text-sm'>I am always open to making new connections. If you have questions, comments about my work, or interested in discussing potential opportunities, please reach out to me by filling out this form: </p>
+            </div>
+            <motion.div
+              variants={growIn("horizontal","tween",2,1,"100%")} 
+              className='bg-off-black'>
+            </motion.div>
 
-      <motion.div
-        variants={slideIn("right","tween",1,1)}
-        className="xl:flex-1 w-full min-h-[550px] xl:h-auto md:h-[550px] h-[350px] overflow-hidden"
-      >
-        <MooseCanvas/>
-      </motion.div>
+            <form 
+              ref={formRef}
+              onSubmit={handleSubmit}
+              className='mt-8 flex flex-col gap-4'
+            >
+              <label className='flex flex-col'>
+                <span className='px-4 mb-4 text-sm'>Your Name</span>
+                <input 
+                  type="text"
+                  name="name"
+                  value={form.name}
+                  onChange={handleChange}
+                  placeholder="What's your name?"
+                  className={`px-4 bg-primary placeholder:text-secondary outline-none text-sm`} />
+              </label>
+              <motion.div
+                variants={growIn("horizontal","tween",2.2,1,"100%")} 
+                className='bg-off-black'>
+              </motion.div>
+              <label className='flex flex-col'>
+                <span className='px-4 mb-4 text-sm'>Your Email</span>
+                <input 
+                  type="email"
+                  name="email"
+                  value={form.email}
+                  onChange={handleChange}
+                  placeholder="What's your email?"
+                  className={`px-4 bg-primary placeholder:text-secondary outline-none text-sm`} />
+              </label>
+              <motion.div
+                variants={growIn("horizontal","tween",2.4,1,"100%")} 
+                className='bg-off-black'>
+              </motion.div>
+              <label className='flex flex-col'>
+                <span className='px-4 mb-4 text-sm'>Your Message</span>
+                <textarea
+                  row="7" 
+                  name="message"
+                  value={form.message}
+                  onChange={handleChange}
+                  placeholder="How can I help?"
+                  className={`px-4 bg-primary placeholder:text-secondary outline-none text-sm`} />
+              </label>
+              <div className='px-4'>
+                <button
+                type="submit"
+                className='bg-tertiary w-full py-3 px-8 font-bold shadow-md shadow-primary hover:bg-secondary hover:text-off-white'
+              >
+                {loading ? 'Sending...' : 'Send'}
+              </button>
+              </div>
+              <motion.div
+                variants={growIn("horizontal","tween",1,1,"100%")} 
+                className='bg-off-black'>
+              </motion.div>
+              
+            </form>
+          </div>
+        </motion.div>
 
+        <motion.div
+          variants={slideIn("right","tween",1,1)}
+          className="xl:flex-1 w-full min-h-[550px] h-[350px] xl:h-auto md:h-[550px] overflow-hidden"
+        >
+          <MooseCanvas/>
+        </motion.div>
+
+      </div>
+      <Footer />
     </motion.div>
+    
   )
 }
 

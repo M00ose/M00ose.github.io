@@ -4,6 +4,7 @@ import { staggerContainer, borderFill, fillIn, growIn, textVariant, slideIn } fr
 
 import { styles } from '../styles'
 import { projects } from "../constants";
+import Footer from './Footer.jsx';
 
 const Project = (props) => {
   return (
@@ -55,6 +56,7 @@ const Project = (props) => {
             variants={textVariant(2.5)} 
             className={`absolute md:left-[28%] inset-y-[48%] md:inset-y-[23%] min-w-[300px] h-fit w-fit p-2 bg-tertiary ${styles.border} z-10 text-center`}>{props.name}
         </motion.div>
+        <Footer />
       
     </motion.div>
   )

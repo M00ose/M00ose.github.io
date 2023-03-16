@@ -5,6 +5,7 @@ import { staggerContainer, growIn, textVariant } from '../utils/index.js';
 import { styles } from '../styles'
 import { profile } from '../assets';
 import { technologies } from "../constants";
+import Footer from './Footer.jsx';
 
 const Hero = () => {
   return (
@@ -78,10 +79,10 @@ const Hero = () => {
         {/* Vertical Separator */}
         <motion.div 
           variants={growIn("vertical","tween",1,1)} 
-          className={`invisible md:visible absolute left-[345px] xl:left-[620px] xxl:left-[720px] bg-off-black max-h-[82vh] overflow-hidden`}>
+          className={`invisible md:visible absolute left-[345px] xl:left-[620px] xxl:left-[720px] bg-off-black md:max-h-[82vh] lg:max-h-[70vh] xl:max-h-[70vh] overflow-hidden`}>
         </motion.div>
       </div>
-
+      <Footer />
     </motion.div>
   )
 }
