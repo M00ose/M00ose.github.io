@@ -1,5 +1,4 @@
-![Main Page](https://github.com/M00ose/portfolio/blob/main/portfolio.png?raw=true)
-<img width="1255" alt="preview" src="ttps://user-images.githubusercontent.com/93357792/225831010-f104e351-b7ba-433e-8b71-dbf3725f44ea.png">
+![Preview Image](/src/assets/portfolio.png)
 
 # Mooose | Portfolio
 
