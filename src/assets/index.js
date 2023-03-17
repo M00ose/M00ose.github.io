@@ -18,7 +18,7 @@ import threejs from './technologies/threejs.svg';
 import typescript from './technologies/typescript.svg';
 
 import arienza from './projects/arienza.png';
-import echo from './projects/echo.png';
+import prospectify from './projects/prospectify.png';
 import siargao from './projects/siargao.png';
 
 export {
@@ -42,6 +42,6 @@ export {
     typescript,
 
     arienza,
-    echo,
+    prospectify,
     siargao,
 }

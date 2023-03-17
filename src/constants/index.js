@@ -15,7 +15,7 @@ import {
   typescript,
   
   arienza,
-  echo,
+  prospectify,
   siargao,
 } from '../assets';
 
@@ -115,11 +115,11 @@ const projects = [
       github: "https://github.com/M00ose/webpage-arienza",
     },
     {
-      name: "Echo",
+      name: "Prospectify",
       description: "A CRUD application built with the MERN stack. The application is a CRM platform designed specifically for nonprofits and fundraising workflows.",
       tag: "In progress",
       tech: 'Built with the M.E.R.N stack, with Flowbite for design and Refine for development.',
-      image: echo,
+      image: prospectify,
       link: "",
       github: "https://github.com/M00ose/webapp-echo",
     },
