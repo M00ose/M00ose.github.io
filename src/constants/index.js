@@ -102,7 +102,7 @@ const projects = [
       tag: "Completed",
       tech: 'Built with Next.js, Tailwind CSS, and Framer Motion.',
       image: siargao,
-      link: "https://siargaoisf.ph/",
+      link: "https://siargaoisf.vercel.app/",
       github: "https://github.com/M00ose/webpage-siargaoISF",
     },
     {
