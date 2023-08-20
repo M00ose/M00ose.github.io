@@ -2,7 +2,7 @@
 
 # Mooose | Portfolio
 
-[live site](https://mooose.vercel.app/)
+[live site](https://tyronejacalan.vercel.app/)
 
 This is a static website that highlights some information about me, my capabilities, and my projects. I implemented a contact form for viewers to send personal messages directed to me. The design attempts to capture my structured and systematic nature, while still showcasing my creative abilities in working with animations and 3d objects.
 
